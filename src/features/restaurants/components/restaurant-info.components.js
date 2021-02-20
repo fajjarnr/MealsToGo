@@ -1,7 +1,7 @@
 import React from "react";
-import styled from "styled-components/native";
-import { StyleSheet, Text, View } from "react-native";
+import { Text } from "react-native";
 import { Card } from "react-native-paper";
+import styled from "styled-components/native";
 
 const RestaurantCard = styled(Card)`
   background-color: white;
@@ -24,5 +24,3 @@ export const RestaurantInfo = ({ restaurant }) => {
     </RestaurantCard>
   );
 };
-
-const styles = StyleSheet.create({});
