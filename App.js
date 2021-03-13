@@ -18,7 +18,7 @@ import { RestaurantsContextProvider } from "./src/services/restaurants/restauran
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
-  Restaurant: "md-restaurant",
+  Restaurants: "md-restaurant",
   Maps: "md-map",
   Settings: "md-settings",
 };
@@ -37,8 +37,8 @@ const Settings = () => (
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
   return {
-    tabBarIcon: ({ size, icon }) => (
-      <Ionicons name={iconName} size={size} icon={icon} />
+    tabBarIcon: ({ size, color }) => (
+      <Ionicons name={iconName} size={size} color={color} />
     ),
   };
 };
